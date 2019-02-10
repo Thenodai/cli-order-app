@@ -11,7 +11,11 @@ class Connection
 
     public function __construct()
     {
-        $this->connection = new \PDO('mysql:host=localhost;dbname=cli-app', 'root', '');
+        $this->connection = new \PDO(
+            getenv('DATABASE_DSN'),
+            getenv('DATABASE_USERNAME'),
+            getenv('DATABASE_PASSWORD')
+        );
     }
 
     public function save(Order $order)

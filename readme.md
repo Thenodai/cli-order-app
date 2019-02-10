@@ -4,7 +4,7 @@ php cli application for ordering and meal management.
 --preparation--
 `composer install` will install app dependencies.
 import `cli-app.sql` script to prepare a database.
-App\Db\Connection holds database credentials. Change them accordingly.
+copy `.env.dist` > `.env` and change db credentials accordingly
 
 --- usage ---
 `./index.php place-order` command will guide you through ordering process and will show message in case of error. 

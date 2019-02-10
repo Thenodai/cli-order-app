@@ -8,6 +8,9 @@ use App\Command\FetchOrders;
 use App\Command\PlaceOrder;
 use App\Command\UpdateOrder;
 use Symfony\Component\Console\Application;
+use Symfony\Component\Dotenv\Dotenv;
+
+(new Dotenv())->load(__DIR__ . '/.env');
 
 $app = new Application();
 $app->add(new PlaceOrder());
