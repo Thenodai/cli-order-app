@@ -1,0 +1,17 @@
+{
+    "name": "pijus/cli-app",
+    "authors": [
+        {
+            "name": "Pijus Pauliukonis",
+            "email": "pijus.pauliukonis@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "require": {
+        "symfony/console": "^4.2"
+    }
+}
